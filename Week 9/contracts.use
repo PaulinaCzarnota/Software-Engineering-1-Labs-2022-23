@@ -1,0 +1,32 @@
+model Company_Contracts
+
+
+class Person
+  attributes
+    name : String
+    age : Integer
+end
+
+
+class Contract
+  attributes
+    jobType : String
+    hours : Integer
+    rate : Real
+end
+
+
+class Company 
+  attributes
+    name : String
+  operations 
+    hire( p : Person, jT : String, h : Integer, r : Real)
+       
+end
+
+
+
+ 
+
+constraints
+

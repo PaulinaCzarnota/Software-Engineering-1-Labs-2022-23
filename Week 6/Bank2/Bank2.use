@@ -1,0 +1,25 @@
+class Customer
+    attributes
+        name : String
+    operations
+        depositMoney(x:Integer, acc:BankAccount)
+        begin
+            acc.deposit(x)
+        end
+end
+
+class BankAccount
+    attributes
+        balance : Integer
+        accountNo : String
+    operations
+        deposit(amount : Integer)
+        begin
+            self.balance := self.balance + amount
+        end
+
+        getBalance() : Integer
+        begin   
+            result := self.balance;
+        end
+end

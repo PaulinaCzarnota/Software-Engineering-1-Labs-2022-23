@@ -1,0 +1,79 @@
+model Company_Contracts
+
+
+class Person
+  attributes
+    name : String
+    student_id : String
+    age : Integer
+    income : Real
+  operations
+    calculateIncome() : Real
+    begin
+        declare x : Real, c : Contract;
+        result := 0.0;
+        
+        for c in self.jobs do
+            x := c.calculateIncome();
+            result := result + x
+        end;
+        
+        self.income := result
+    end
+end
+
+class Contract
+  attributes
+    jobType : String
+    hours : Integer
+    rate : Real
+  operations
+    calculateIncome() : Real
+    begin
+        result := self.hours * self.rate
+    end
+    
+end
+
+
+class Company 
+  attributes
+    name : String
+  operations 
+    hire( p : Person, jT : String, h : Integer, r : Real)
+    begin
+        declare c : Contract;
+        c := new Contract;
+        c.jobType := jT;
+        c.hours := h;
+        c.rate := r;
+        insert (c,self) into isAt;
+        insert(p, c) into WorksOn
+        
+    end          
+end
+
+
+
+association WorksOn between
+    Person[1]
+    Contract[*] role jobs
+end
+
+
+association isAt between
+    Contract[*] role contracts
+    Company[1]
+end
+ 
+
+constraints
+    
+context Company::hire( p : Person, jT : String, h : Integer, r : Real)
+    pre agePre: p.age >= 18
+    pre minHours: h >= 8
+    
+    
+-- not in test    
+context Company
+    inv oneJob: self.contracts->forAll(u, v| u <> v implies u.person <> v.person)    

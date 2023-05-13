@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram_Layout version="13">
+    <diagramOptions>
+        <autolayout>false</autolayout>
+        <antialiasing>false</antialiasing>
+        <showassocnames>false</showassocnames>
+        <showattributes>true</showattributes>
+        <showmultiplicities>false</showmultiplicities>
+        <showoperations>false</showoperations>
+        <showrolenames>true</showrolenames>
+        <showgrid>false</showgrid>
+        <ShowStates>false</ShowStates>
+    </diagramOptions>
+    <node id="joe" sizeCalculated="true" type="Object">
+        <name>joe</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+            <x>15.427163139350327</x>
+            <y>13.884804555128639</y>
+        </strategy>
+        <hidden>false</hidden>
+    </node>
+    <node id="savAcc" sizeCalculated="true" type="Object">
+        <name>savAcc</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+            <x>166.76077922821608</x>
+            <y>9.415315658067103</y>
+        </strategy>
+        <hidden>false</hidden>
+    </node>
+    <node id="curAcc" sizeCalculated="true" type="Object">
+        <name>curAcc</name>
+        <strategy type="org.tzi.use.gui.views.diagrams.elements.positioning.StrategyFixed">
+            <x>166.55282689942888</x>
+            <y>88.40634143438601</y>
+        </strategy>
+        <hidden>false</hidden>
+    </node>
+</diagram_Layout>

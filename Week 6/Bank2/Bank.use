@@ -1,0 +1,32 @@
+model BankingSys
+
+class Customer
+    attributes
+        name : String
+    operations
+        depositMoney(x : Integer, acc : BankAccount)
+end
+
+class BankAccount
+    attributes
+        balance : Integer
+        accountNo : String
+    operations
+        deposit(amount : Integer)
+        getBalance() : Integer
+end
+
+class CurrentAccount < BankAccount
+    attributes
+        od_limit : Integer
+end
+
+class SavingsAccount < BankAccount
+    attributes
+        rate : Real
+end
+
+association HasAccounts between
+    Customer[1]
+    BankAccount[*] role accounts
+end
