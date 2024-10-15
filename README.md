@@ -1,4 +1,4 @@
-This repository contains a collection of labs completed for the Software Engineering 1 course during my second year of Computer Science at TU Dublin. Each lab focuses on different aspects of software design and engineering, utilizing various modeling techniques and programming practices.
+This repository contains a collection of labs completed for the Software Engineering 1 module during my second year of Computer Science at TU Dublin. Each lab focuses on different aspects of software design and engineering, utilizing various modeling techniques and programming practices.
 
 ## Lab Summaries
 
