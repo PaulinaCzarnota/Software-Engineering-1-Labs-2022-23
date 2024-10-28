@@ -1,6 +1,6 @@
 This repository contains a collection of labs completed for the Software Engineering 1 module during my second year of Computer Science at TU Dublin. Each lab focuses on different aspects of software design and engineering, utilizing various modeling techniques and programming practices.
 
-## Lab Summaries
+# Lab Summaries
 
 ### Lab 1: Bank ATM Model
 Developed use case scenario diagrams for a bank ATM system using **StarUML**. This lab illustrated user interactions, including account management and transaction processes, providing a clear understanding of system requirements and user experiences.
